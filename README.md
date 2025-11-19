@@ -6,14 +6,14 @@ It computes user-to-user similarity with Jaccard similarity and ranks candidate 
 ## What It Does
 
 * Stores user → item interactions in a custom `HashTable`
-* Supports **two collision avoidance techniques**:
+* Supports two collision avoidance techniques:
 
   * `separate_chaining`
   * `double_hashing`
-* Computes **Jaccard similarity** between a target user and all other users
-* Aggregates similarity scores into **item scores** (items recommended by many similar users get higher priority)
-* Uses a **MaxHeap** to keep the highest-scoring items at the top
-* Generates **top-N recommendations** for each user
+* Computes Jaccard similarity between a target user and all other users
+* Aggregates similarity scores into item scores (items recommended by many similar users get higher priority)
+* Uses a MaxHeap to keep the highest-scoring items at the top
+* Generates top-N recommendations for each user
 * Measures and prints:
 
   * Insertion time
@@ -41,6 +41,6 @@ It computes user-to-user similarity with Jaccard similarity and ranks candidate 
    jupyter notebook recommendation_system.ipynb
    ```
 
-3. **Run all cells from top to bottom:**
+3. **Run all cells from top to bottom.**
 
 
